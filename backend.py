@@ -47,11 +47,12 @@ while True:
     wp.write(filedata[1]+'(mm-dd-yyyy)<br>')
     wp.write('Last Readout: '+tqcm[0]+' sec <br>')
     wp.write('Delta Frequency= '+tqcm[3]+' Hz/hr <br>')
-    wp.write('Sensor temperature='+tqcm[2]+'  degC <br>')
+    wp.write('Sensor temperature= '+tqcm[2]+' degC <br>')
     wp.write('Sensor Frequency= '+tqcm[1]+' Hz <br>')
+    wp.write('<p><small>Janmejoy Sarkar | SUIT Mission</p>')
     
     wp.write('</body> \n</html>')
     wp.close()
     
     print('Last updated: '+ str(datetime.now()))
-    time.sleep(120)
+    time.sleep(1800)
